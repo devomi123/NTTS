@@ -1,0 +1,228 @@
+{
+  "users": [
+    {
+      "email": "omkarambi44@gmail.com",
+      "password": "$2a$10$BTXNECe0FxxhOYHvEcwqIubEQvMr06nhCr9sN/xcpG88PfQsi98UG",
+      "id": 1
+    },
+    {
+      "email": "omkarambi7887@gmail.com",
+      "password": "$2a$10$NvlFDhdqmyXsYmYuwnzcieJihhWO3I0K8wiFUt20sTzUwuBrVZUhy",
+      "id": 2
+    },
+    {
+      "email": "omkarambi@gmail.com",
+      "password": "$2a$10$W/3Rt89a/Ei2ZaGbzOa7N..GUJLLk6MlGfwIoE0j8xMTpqxdP.eDq",
+      "id": 3
+    },
+    {
+      "email": "om00@gmail.com",
+      "password": "$2a$10$ws.yARZy0u6H0Tq8aTBws.l1iaVPoqZsL7NBaCpkZOD3gDSsJRMJG",
+      "id": 4
+    },
+    {
+      "email": "sourabh@gmail.com",
+      "password": "$2a$10$6Up0sKADIWCQNVYJK7io9uV0vbHv9m1BKoAMhtTa5s68MCKSNjFPW",
+      "id": 5
+    },
+    {
+      "email": "pp@gmail.com",
+      "password": "$2a$10$3lpz2KJEspKC76..g22VNOcMa9FSkCY7ooT.d7vhBPfUOr8siiW62",
+      "id": 6
+    },
+    {
+      "email": "omkarambi78@gmail.com",
+      "password": "$2a$10$uHAKUwELS0WBXIYX2AJLveXa52hlR3R9AXw7CJNK/v3rLamox27Re",
+      "id": 7
+    },
+    {
+      "email": "sp@gmail.com",
+      "password": "$2a$10$dQh.I2UeB6FRkQiupAHkn.RI8cPXKIV.a4Z1oCvmGdGiQ8L6eMbja",
+      "id": 8
+    },
+    {
+      "email": "pp90@gmail.com",
+      "password": "$2a$10$7x6Mln5IpMAk6vQPWFYVXuyk1dpO4FTvXhRLWZnpX9SSl5p4JY5W6",
+      "id": 9
+    }
+  ],
+  "fakedata": [
+    {
+      "userId": 1,
+      "firstName": "Krish",
+      "lastName": "Lee",
+      "phoneNumber": "123456",
+      "emailAddress": "krish.lee@learningcontainer.com"
+    },
+    {
+      "userId": 2,
+      "firstName": "racks",
+      "lastName": "jacson",
+      "phoneNumber": "123456",
+      "emailAddress": "racks.jacson@learningcontainer.com"
+    },
+    {
+      "userId": 3,
+      "firstName": "denial",
+      "lastName": "roast",
+      "phoneNumber": "33333333",
+      "emailAddress": "denial.roast@learningcontainer.com"
+    },
+    {
+      "userId": 4,
+      "firstName": "devid",
+      "lastName": "neo",
+      "phoneNumber": "222222222",
+      "emailAddress": "devid.neo@learningcontainer.com"
+    },
+    {
+      "userId": 5,
+      "firstName": "jone",
+      "lastName": "mac",
+      "phoneNumber": "111111111",
+      "emailAddress": "jone.mac@learningcontainer.com"
+    }
+  ],
+  "posts": [
+    {
+      "name": "pratik",
+      "position": "Junior Technical Author",
+      "office": "Tokyo",
+      "age": 25,
+      "salary": "30000"
+    },
+    {
+      "name": "promod",
+      "position": "Junior Technical Author",
+      "office": "Tokyo",
+      "age": 25,
+      "salary": "30000"
+    },
+    {
+      "name": "omkar",
+      "position": "Junior Technical Author",
+      "office": "Tokyo",
+      "age": 25,
+      "salary": "30000"
+    },
+    {
+      "name": "sanket",
+      "position": "Junior Technical Author",
+      "office": "London",
+      "age": 25,
+      "salary": "30000"
+    },
+    {
+      "name": "sanket",
+      "position": "Software Engineer",
+      "office": "London",
+      "age": "25",
+      "salary": "30000"
+    },
+    {
+      "name": "Rahul",
+      "position": "Software Engineer",
+      "office": "London",
+      "age": 25,
+      "salary": "30000"
+    },
+    {
+      "name": "Rahul",
+      "position": "Software Engineer",
+      "office": "London",
+      "age": 25,
+      "salary": "30000"
+    },
+    {
+      "name": "ketan",
+      "position": "Software Engineer",
+      "office": "San Francisco",
+      "age": 25,
+      "salary": "30000"
+    },
+    {
+      "name": "pratik",
+      "position": "Junior Technical Author",
+      "office": "Tokyo",
+      "age": 25,
+      "salary": "30000"
+    },
+    {
+      "name": "promod",
+      "position": "Junior Technical Author",
+      "office": "Tokyo",
+      "age": 25,
+      "salary": "30000"
+    },
+    {
+      "name": "omkar",
+      "position": "Junior Technical Author",
+      "office": "Tokyo",
+      "age": 25,
+      "salary": "30000"
+    },
+    {
+      "name": "sanket",
+      "position": "Junior Technical Author",
+      "office": "London",
+      "age": 25,
+      "salary": "30000"
+    },
+    {
+      "name": "sanket",
+      "position": "Software Engineer",
+      "office": "London",
+      "age": "25",
+      "salary": "30000"
+    },
+    {
+      "name": "Rahul",
+      "position": "Software Engineer",
+      "office": "London",
+      "age": 25,
+      "salary": "30000"
+    },
+    {
+      "name": "pratik",
+      "position": "Junior Technical Author",
+      "office": "Tokyo",
+      "age": 25,
+      "salary": "30000"
+    },
+    {
+      "name": "promod",
+      "position": "Junior Technical Author",
+      "office": "Tokyo",
+      "age": 25,
+      "salary": "30000"
+    },
+    {
+      "name": "omkar",
+      "position": "Junior Technical Author",
+      "office": "Tokyo",
+      "age": 25,
+      "salary": "30000"
+    },
+    {
+      "name": "sanket",
+      "position": "Junior Technical Author",
+      "office": "London",
+      "age": 25,
+      "salary": "30000"
+    },
+    {
+      "name": "sanket",
+      "position": "Software Engineer",
+      "office": "London",
+      "age": "25",
+      "salary": "30000"
+    },
+    {
+      "name": "Rahul",
+      "position": "Software Engineer",
+      "office": "London",
+      "age": 25,
+      "salary": "30000"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<div id="const">
+
+<div class="container">
+  <form class="d-flex ">
+    <input class="form-control me-2 w-50 " name="name" type="text" [(ngModel)]="name"   placeholder="Search">
+    <button class="btn btn-primary" type="button" (click)="Search()" >Search</button>
+    <!-- <button class="btn btn-danger ms-2" type="button" (click)="logout()">LogOut</button> -->
+
+  </form>
+  <h3 class="text-center mt-4"> Employe Info </h3>
+   <table  class="table table-bordered mt-2">
+    <tr>
+      <th>NAME</th> <br><br>
+      <th>POSITION</th><br><br>
+      <th>OFFICE</th><br><br>
+      <th>AGE</th><br><br>
+      <th>SALARY</th><br><br>
+      <!-- <th>ID</th> -->
+
+    </tr>
+    <tr *ngFor="let d of data | paginate: { itemsPerPage: 4, currentPage: p }">
+      <td>{{d.name}}</td><br><br>
+      <td>{{d.position}}</td><br><br>
+      <td>{{d.office}}</td><br><br>
+      <td>{{d.age}}</td><br><br>
+      <td>{{d.salary}}</td><br><br>
+
+
+    </tr>
+   </table>
+   <pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+
+</div>
+
+</div>

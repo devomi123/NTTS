@@ -1,0 +1,51 @@
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #f093fb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgb(245, 96, 116));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1))
+  }
+
+#colwidth{
+  /* width: 80%; */
+  /* align-items: center; */
+  margin-left: 50%;
+  /* box-shadow: 5px 10px #888888; */
+
+}
+
+@media (max-width:990px) {
+ #inputpattern {
+    background-color: lightblue;
+   /* margin-left: 25%; */
+  }
+  #colwidth{
+    width:100%;
+  margin-left: 40%;
+
+  }
+  /* .form-outline{
+    margin-left: 20%;
+  } */
+  #button{
+    margin-right: 0%;
+  }
+}
+
+.form-outline{
+  margin-left: 30%;
+}
+#button{
+  margin-left: 10%;
+}
+#button:hover{
+  background-color: rgb(12, 240, 190);
+  color: black;
+}
+#back{
+  background: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%);
+
+}

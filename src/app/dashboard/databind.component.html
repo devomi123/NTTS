@@ -1,0 +1,28 @@
+<div id="dash">
+
+  <table class="table" >
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">firstName</th>
+        <th scope="col">lastName</th>
+        <th scope="col">emailAddress</th>
+        <th scope="col">phoneNumber</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let d of data">
+        <td>{{d.userId}}</td>
+        <td>{{d.firstName}}</td>
+        <td>{{d.lastName}}</td>
+        <td>{{d.emailAddress}}</td>
+        <td>{{d.phoneNumber}}</td>
+
+      </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-warning mt-5" (click)="viewdata()">VIEWDATA</button>
+
+
+</div>
