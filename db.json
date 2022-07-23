@@ -44,6 +44,16 @@
       "email": "pp90@gmail.com",
       "password": "$2a$10$7x6Mln5IpMAk6vQPWFYVXuyk1dpO4FTvXhRLWZnpX9SSl5p4JY5W6",
       "id": 9
+    },
+    {
+      "email": "bhavesh@gmail.com",
+      "password": "$2a$10$Dj0.kH2rogRFG18DaLu1GOjCIuHST7KBO0EGEG/KtkA2xwiWgorB2",
+      "id": 10
+    },
+    {
+      "email": "om10@gmail.com",
+      "password": "$2a$10$NKdOVYvp9xLedWenjC0rkuYB/7wGbAYrE74pj7RaJe907.BpQ.rve",
+      "id": 11
     }
   ],
   "fakedata": [

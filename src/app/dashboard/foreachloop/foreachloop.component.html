@@ -1,12 +1,47 @@
-<div id="cont">
-<div class="col-lg-12">
-  <div class="col-lg-6">
-   <div class="btns ">
-    <button class="btn btn-dark mt-5" (click)="tapbutton()">FOREACH</button>
+
+
+
+<div id="main" class="{{classname}}" id="cont">
+  <div class="container-fluid"  style="padding-top: 30px;">
+    <div class="form-check form-switch container">
+      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" value="{{mode}}"
+        (click)="modechange($event)">
+      <label class="form-check-label" for="flexSwitchCheckDefault">{{mode}} Mode</label>
+    </div>
+    <div class="btns ">
+      <button class="btn btn-dark mt-5" (click)="tapbutton()">FOREACH</button>
+    </div>
   </div>
+  <div class="contaier-fluid mt">
+
+    <!-- <div class="container">
+      <table  class="table table-bordered ">
+        <tr>
+          <th>NAME</th> <br><br>
+          <th>POSITION</th><br><br>
+          <th>OFFICE</th><br><br>
+          <th>AGE</th><br><br>
+          <th>SALARY</th><br><br>
+
+        </tr>
+        <tr *ngFor="let d of data | paginate: { itemsPerPage: 4, currentPage: p }">
+          <td>{{d.name}}</td><br><br>
+          <td>{{d.position}}</td><br><br>
+          <td>{{d.office}}</td><br><br>
+          <td>{{d.age}}</td><br><br>
+          <td>{{d.salary}}</td><br><br>
+
+
+        </tr>
+       </table>
+       <pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+
+    </div> -->
+
+    </div>
+
   </div>
-  <div class="col-lg-6">
-   
-   </div>
-</div>
-</div>
+
+
+

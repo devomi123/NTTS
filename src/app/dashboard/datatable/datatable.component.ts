@@ -25,7 +25,7 @@ if(this.name == ""){
 this.ngOnInit();
 }else{
   this.data = this.data.filter(res =>{
-  return res.name.toUpperCase().match(this.name.toUpperCase())
+  return res.name.match(this.name.toLowerCase())
   });
 }
   }

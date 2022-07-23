@@ -38,10 +38,8 @@ export class LoginComponent implements OnInit {
           alert("Login Success");
 
           this.router.navigate(["dash"]);
-        }else{
-          alert("Login Faild");
-             break
         }
+       
 
       }
     })
