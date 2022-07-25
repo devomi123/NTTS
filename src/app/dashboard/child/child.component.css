@@ -1,0 +1,28 @@
+
+
+
+
+.fill{
+  border: 3px solid black;
+  width: auto; height: 500px;
+  border-radius: 30px;
+  margin-top: 18%;
+  background-color: lightgrey;
+
+}
+.parent{
+  border: 3px solid rgb(17, 17, 20);
+  width: auto;
+   height: 550px;
+  border-radius: 30px;
+  /* margin-top: 18%; */
+}
+li{
+  margin-top: 10px;
+  margin-left: 20%;
+  font-size: 19px;
+}
+.fill:hover{
+  border: 10px solid rgb(156, 56, 196);
+
+ }

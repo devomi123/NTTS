@@ -17,7 +17,12 @@
   }
   .card-registration .select-arrow {
   top: 13px;
+
   }
 /* .form-outline{
   margin-left: 10%;
 } */
+ #back{
+  background: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%);
+
+ }

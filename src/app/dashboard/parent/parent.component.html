@@ -1,1 +1,31 @@
-<p>parent works!</p>
+<!-- <router-outlet></router-outlet> -->
+<form action="" class="bg-dark">
+  <div class="container">
+    <div class="col-lg-12">
+      <div class="row d-flex">
+        <div class="col-lg-6">
+          <div class="fill">
+            <h1 class="text-center mt-4">Parent Component</h1>
+            <br>
+            <div style="padding:40px">
+              <ul>
+                <li *ngFor="let bev of beverages">
+                  {{bev}}
+                </li>
+              </ul>
+              <div>
+                <button class="btn btn-dark" (click)="customer()">EDIT</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <!-- <app-parent (beverage)="currentBeverage" (newBeverageEvent)="addBeverage($event)" ></app-parent> -->
+          <app-child [parentdata]="data" (newdatasendEvent)="recivedata($event)"></app-child>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+</form>
