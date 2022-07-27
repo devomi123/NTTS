@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
 
-  constructor() { }
-  beverages=['milk','tea','coffee','juice']
+
+
+  constructor(private http:HttpClient) { }
+  // beverages=['milk','tea','coffee','juice']
+   student =[{name:'omkar',
+   add:'kolhapur',
+  email:'omkar@gmail.com'}];
   customername = [];
    parentdata:any='' ;
   data: any = [];
@@ -19,16 +25,32 @@ export class ParentComponent implements OnInit {
 //  this.beverages.push(newBeverage);
 //   }
   customer() {
-    this.data = this.beverages
+    this.data = this.student
     // this.router.navigate(['/child'])
     console.log(this.data)
     return false
   }
-  recivedata(data:string) {
-    this.beverages.push(data);
-    // this.customername.push(event)
+  recivedata(data:any) {
     console.log(data);
-      return false
+    for(let i=0;i<this.student.length;i++){
+      this.student[i].add=data.add
+      this.student[i].name=data.name
+      this.student[i].email=data.email;
+    }
+  //   //const newname = this.student[]
+  //   this.student.name=data.name;
+  //   this.student.email=data.email;
+  //   this.student.add=data.add;
+
+  //   // localStorage.setItem("student", data);
+  //   this.http.post('http://localhost:3000/student',{student:data}).subscribe((res:any)=>{
+  //     console.log(res);
+
+  //   })
+
+  //   // this.customername.push(event)
+  //   console.log(data);
+  //     return false
   }
 
 }

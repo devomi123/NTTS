@@ -234,5 +234,12 @@
       "age": 25,
       "salary": "30000"
     }
-  ]
+  ],
+  "student": {
+    "student": {
+      "name": "omkar",
+      "email": "ad@gmail.com",
+      "add": "mumbai"
+    }
+  }
 }

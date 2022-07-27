@@ -5,7 +5,7 @@ import { Directive, ElementRef } from '@angular/core';
 })
 export class ColorchangeDirective {
 
-  constructor(private Element:ElementRef) {
+  constructor(Element:ElementRef) {
     console.log(ElementRef);
      Element.nativeElement.style = "color:green;"
     //  Element.nativeElement.validation = "maxLength:10"

@@ -1,37 +1,39 @@
 <div>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+      <!-- <a class="navbar-brand" href="javascript:void(0)">Logo</a> -->
+       <!-- <img src="../../assets/img/images-removebg-preview.png" class="img" alt=""> -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"> NIMAP</span>
       </button>
       <div class="collapse navbar-collapse" id="mynavbar">
         <ul class="navbar-nav me-auto p-2">
+
           <li class="nav-item ">
-            <a class="nav-link btn btn-light text-dark" routerLink="databind"><b>DATABIND</b></a>
+            <a class="nav-link btn btn-warning text-dark" routerLink="databind"><b>DATABIND</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-light text-dark ms-3" routerLink="pipe"><b>PIPE&DIRECCTIVE</b></a>
+            <a class="nav-link btn btn-warning text-dark ms-3" routerLink="pipe"><b>PIPE&DIRECCTIVE</b></a>
 
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-light text-dark ms-3" routerLink="foreach"><b>FOREACHLOOP</b></a>
+            <a class="nav-link btn btn-warning text-dark ms-3" routerLink="foreach"><b>FOREACHLOOP</b></a>
 
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-light text-dark ms-3" routerLink="datatable"><b>DATATABLE</b></a>
+            <a class="nav-link btn btn-warning text-dark ms-3" routerLink="datatable"><b>DATATABLE</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-light text-dark ms-3" (click)="parent()"><b>PARENTCHILD</b></a>
+            <a class="nav-link btn btn-warning text-dark ms-3" (click)="parent()"><b>PARENTCHILD</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-light text-dark ms-3" routerLink="crud"><b>CRUD</b></a>
+            <a class="nav-link btn btn-warning text-dark ms-3" routerLink="crud"><b>CRUD</b></a>
           </li>
         </ul>
         <form class="d-flex">
           <!-- <input class="form-control me-2" type="text" placeholder="Search">
           <button class="btn btn-primary" type="button">Search</button> -->
-          <button class="btn btn-danger " type="button" (click)="logout()">LogOut</button>
+          <button class="btn btn-danger me-5" type="button" (click)="logout()"><b>LogOut</b></button>
 
         </form>
       </div>
@@ -41,5 +43,8 @@
 </div>
 <div id="dash">
   <router-outlet></router-outlet>
-  <input type="text" name="" id="" appCheakNum>
+ <div class="text-center">
+  <img src="../../assets/img/images-removebg-preview.png" class="img" alt="">
+ </div>
+
 </div>

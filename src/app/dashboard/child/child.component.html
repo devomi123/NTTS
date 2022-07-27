@@ -1,13 +1,20 @@
 
 <div class="mt-5">
-  <div class="fill">
-    <h1 class="text-center m-3">Child Component</h1>
-    <br>
-    <div *ngFor="let b of parentdata">
-      <label for="beverage-input" class="ms-3">Send Parent : </label>
-      <input type="text" value="{{b}}" name="name" class="ms-2" #newdatasendEvent>
-      <button class="btn btn-dark mt-2 ms-3" (click)="sendparent(newdatasendEvent.value)">SendParent</button>
+  <form [formGroup]="formdata" >
+    <div class="fill">
+      <h1 class="text-center m-3">Child Component</h1>
+      <br>
+      <div>
+        <label for="beverage-input" class="ms-3">Name : </label>
+        <input type="text"  name="name"   class="ms-2"   formControlName="name"  > <br> <br>
+        <label for="beverage-input" class="ms-3">Email : </label>
+        <input type="text"  name="email"   class="ms-2"   formControlName="email"  > <br> <br>
+        <label for="beverage-input" class="ms-3">Address : </label>
+        <input type="text" name="add" class="ms-2"   formControlName="add" ><br>
+
+        <button class="btn btn-dark mt-2 ms-3" (click)="sendparent()">SendParent</button>
+      </div>
     </div>
-  </div>
+  </form>
 </div>
 <br>

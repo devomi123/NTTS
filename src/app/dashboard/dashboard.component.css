@@ -4,3 +4,9 @@
     height: 600px;
 
 }
+.img{
+  width: 40%;
+}
+.nav-link:hover{
+background-color: bisque;
+}

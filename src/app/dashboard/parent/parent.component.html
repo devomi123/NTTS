@@ -7,10 +7,13 @@
           <div class="fill">
             <h1 class="text-center mt-4">Parent Component</h1>
             <br>
-            <div style="padding:40px">
+            <div style="padding:40px" *ngFor="let i of student">
               <ul>
-                <li *ngFor="let bev of beverages">
-                  {{bev}}
+                <li>
+                  {{i.name}} <br>
+                  {{i.email}}<br>
+                  {{i.add}}
+
                 </li>
               </ul>
               <div>
