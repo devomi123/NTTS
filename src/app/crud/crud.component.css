@@ -1,0 +1,14 @@
+body{
+  height:660px;
+}
+#Emphead{
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ font-size: 40px;
+ font-weight: bold;
+}
+#emp{
+  margin-left: 20%;
+}
+.emptitle{
+  margin-left: 30%;
+}

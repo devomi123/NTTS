@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-databind',
@@ -9,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 export class DatabindComponent implements OnInit {
   data:any
   userId:any
-  constructor( private http:HttpClient) { }
+  constructor( private http:HttpClient,
+    private meta :Meta,
+    private titleservice:Title) { }
 
   ngOnInit(): void {
+    this.meta.addTag({name:'author', content:'resgitech'});
+    this.meta.addTag({name:'AngularTask', content:'index,follow'});
+    this.meta.updateTag({name:'Keyword', content:'databind component Angular'});
+    this.meta.updateTag({name:'description', content:'binding data in angular'});
   }
   viewdata(){
 

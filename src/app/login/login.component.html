@@ -4,7 +4,7 @@
       <div class="col-lg-12" id="colwidth">
         <div class="card card-registration w-50 " id="back" style="border-radius: 19px; margin-top: 15%;">
           <div class="card-body">
-            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 text-center"> <b>LOGIN HERE !</b></h3>
+            <h3 class="mb-4 pb-md-0 mb-md-5 text-center here" ><b>LOGIN HERE !</b></h3>
             <form class="text-center" [formGroup]="logdata">
               <div class="col-md-9 ">
                 <div class="form-outline">
@@ -23,7 +23,7 @@
                       [disabled]="!logdata.valid" (click)="logindata(logdata.value)" />
                     <a routerLink="register" class=" btn btn-dark btn-lg " id="button"> Register</a>
                     <!-- <input class="btn btn-dark ms-5 btn-lg" type="submit" value="Submit" (click)="registerdata(logdata.value)" /> -->
-                    <h6 class="p-2"><b>Already Register Login Here !</b></h6>
+                    <h6 id="loginh6"><b>Already Register Login Here !</b></h6>
                   </div>
                 </div>
               </div>

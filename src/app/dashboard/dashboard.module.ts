@@ -14,6 +14,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { CheakNumDirective } from './cheak-num.directive';
+import { SharedModule } from '../shared/shared.module';
+import { HeaderComponent } from '../shared/header.component';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import { CheakNumDirective } from './cheak-num.directive';
     DashboardRoutingModule,
     NgxPaginationModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedModule
+
     ]
 })
 export class DashboardModule { }

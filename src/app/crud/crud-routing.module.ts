@@ -4,7 +4,7 @@ import { AuthGuard } from '../auth/auth.guard';
 import { CrudComponent } from './crud.component';
 
 const routes: Routes = [
-  {path:"dash/crud",canActivate:[AuthGuard],component:CrudComponent},
+  {path:"",canActivate:[AuthGuard],component:CrudComponent},
 
 ];
 

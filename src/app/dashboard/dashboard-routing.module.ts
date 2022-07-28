@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from '../auth/auth.guard';
+import { CrudComponent } from '../crud/crud.component';
+import { ChildComponent } from './child/child.component';
 import { DashboardComponent } from './dashboard.component';
 import { DatabindComponent } from './databind.component';
 import { DatatableComponent } from './datatable/datatable.component';
@@ -15,6 +17,9 @@ const routes: Routes = [
   {path:"foreach",canActivate:[AuthGuard],component:ForeachloopComponent},
   {path:"datatable",canActivate:[AuthGuard],component:DatatableComponent},
   {path:"parent",canActivate:[AuthGuard],component:ParentComponent},
+  {path:"child",canActivate:[AuthGuard],component:ChildComponent},
+  {path:"crud",canActivate:[AuthGuard],component:CrudComponent},
+
 
 
 

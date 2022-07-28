@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-datatable',
@@ -8,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatatableComponent implements OnInit {
 
-  constructor(private http:HttpClient) { }
+  constructor(
+    private http:HttpClient,
+    private meta :Meta,
+    private titleservice:Title) { }
 // data:any;
 name:any;
 p:number=1;
@@ -18,7 +22,11 @@ data:any[]=[]
       console.log(data);
       this.data = data;
 
-    })
+    });
+    this.meta.addTag({name:'author', content:'resgitech'});
+    this.meta.addTag({name:'AngularTask', content:'index,follow'});
+    this.meta.updateTag({name:'Keyword', content:'Datatable component Angular'});
+    this.meta.updateTag({name:'description', content:'Table data in angular'});
   }
   Search(){
 if(this.name == ""){
