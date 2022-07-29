@@ -10,4 +10,13 @@ export class JsonapiService {
   postempinfo(data:any){
   // return this.http.post<any>("")
   }
+
+  editdata(id: any, data: any) {
+    return this.http.delete('http://localhost:3000/empdata/' + id, data).subscribe((res: any) => {
+      console.log(res);
+      console.log(id);
+       return res ;
+    })
+  }
+
 }

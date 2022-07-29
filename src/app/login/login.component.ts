@@ -35,12 +35,11 @@ export class LoginComponent implements OnInit {
         if (res[i].email == data.email) {
           // window.location.href="dash"
           localStorage.setItem("access_token", res[i].password);
-          alert("Login Success");
-
+          // alert("Login Success");
           this.router.navigate(["dash"]);
         }
-       
 
+  
       }
     })
   }

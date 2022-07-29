@@ -248,14 +248,6 @@
       "empadd": "kolhapur",
       "empemail": "omkarambi@gmail.com",
       "empmobno": "7887905900",
-      "empdep": "SD",
-      "id": 1
-    },
-    {
-      "empname": "omkar",
-      "empadd": "kolhapur",
-      "empemail": "omkarambi@gmail.com",
-      "empmobno": "7887905900",
       "empdep": "devloping",
       "id": 2
     },
@@ -266,38 +258,6 @@
       "empmobno": "8999786755",
       "empdep": "SD",
       "id": 3
-    },
-    {
-      "empname": "omkar",
-      "empadd": "kolhapur",
-      "empemail": "omkarambi@gmail.com",
-      "empmobno": "7887905900",
-      "empdep": "SD",
-      "id": 4
-    },
-    {
-      "empname": "omkar",
-      "empadd": "kolhapur",
-      "empemail": "omkarambi@gmail.com",
-      "empmobno": "7887905900",
-      "empdep": "SD",
-      "id": 5
-    },
-    {
-      "empname": "",
-      "empadd": "",
-      "empemail": "",
-      "empmobno": "",
-      "empdep": "",
-      "id": 6
-    },
-    {
-      "empname": "",
-      "empadd": "",
-      "empemail": "",
-      "empmobno": "",
-      "empdep": "",
-      "id": 7
     }
   ]
 }

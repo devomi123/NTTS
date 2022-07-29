@@ -10,7 +10,7 @@
     ADD_EMP
     </button>
   </div>
- <!-- <div>
+ <div>
   <div class="container">
     <table class="table table-dark mt-3">
       <thead>
@@ -20,6 +20,8 @@
           <th>Address</th>
           <th>MobileNo</th>
           <th>Department</th>
+          <th>Edit/Delete</th>
+
         </tr>
       </thead>
       <tbody>
@@ -29,13 +31,18 @@
           <td>{{emp.empadd}}</td>
           <td>{{emp.empmobno}}</td>
           <td>{{emp.empdep}}</td>
+          <td > <a class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#myModal" (emptied)="empdata" (click)="edit()" ><i class="fa fa-pencil-square-o"></i></a>
+            <span class="btn btn-danger  ms-3" (click)="deletedata(emp.id)"><i class="fa fa-trash"></i></span>
+
+          </td>
+
         </tr>
       </tbody>
     </table>
   </div>
- </div> -->
+ </div>
   <!-- The Modal -->
-  <div class="modal" id="myModal">
+  <div class="modal" id="myModal" >
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
 
@@ -64,7 +71,7 @@
         <!-- Modal footer -->
         <div class="modal-footer bg-dark">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CLOSE</button>
-          <button type="button" class="btn btn-danger" (click)="submit(formdata.value)">SUBMIT</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" (click)="submit(formdata.value)" >SUBMIT</button>
 
         </div>
 
