@@ -54,6 +54,16 @@
       "email": "om10@gmail.com",
       "password": "$2a$10$NKdOVYvp9xLedWenjC0rkuYB/7wGbAYrE74pj7RaJe907.BpQ.rve",
       "id": 11
+    },
+    {
+      "email": "omkar@gmail.com",
+      "password": "$2a$10$58Y.XGIUpkxFF5U5HBcd0.84x8QNzlr16U9HSt.Yzg3SnZ.q.i5o.",
+      "id": 12
+    },
+    {
+      "email": "sourabha2004@gmail.com",
+      "password": "$2a$10$g3A0IneBPKLuFmYZgfpxT.fvQaZimRoBHETGqot1AkvkS06OJ7vkq",
+      "id": 13
     }
   ],
   "fakedata": [

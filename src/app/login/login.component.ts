@@ -25,7 +25,6 @@ export class LoginComponent implements OnInit {
     console.log(data);
     this.http.get('http://localhost:3000/users/').subscribe((res: any) => {
       console.log(res);
-      console.log(res.emailAddress);
       this.data = res;
       if (localStorage.getItem("access_token") != null) {
         // this.router.navigate(["dash"])
@@ -39,7 +38,7 @@ export class LoginComponent implements OnInit {
           this.router.navigate(["dash"]);
         }
 
-  
+
       }
     })
   }

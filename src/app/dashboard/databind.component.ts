@@ -19,6 +19,7 @@ export class DatabindComponent implements OnInit {
     this.meta.addTag({name:'AngularTask', content:'index,follow'});
     this.meta.updateTag({name:'Keyword', content:'databind component Angular'});
     this.meta.updateTag({name:'description', content:'binding data in angular'});
+    this.viewdata();
   }
   viewdata(){
 

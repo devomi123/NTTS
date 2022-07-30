@@ -1,4 +1,5 @@
- <app-header></app-header>
+<app-header></app-header>
+
 <body class="bg-warning">
 
   <div class="container bg-warning">
@@ -7,77 +8,82 @@
     </div>
 
     <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#myModal">
-    ADD_EMP
+      ADD_EMP
     </button>
   </div>
- <div>
-  <div class="container">
-    <table class="table table-dark mt-3">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Address</th>
-          <th>MobileNo</th>
-          <th>Department</th>
-          <th>Edit/Delete</th>
+  <div>
+    <div class="container">
+      <table class="table table-dark mt-3">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>MobileNo</th>
+            <th>Department</th>
+            <th>Edit/Delete</th>
 
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let emp of empdata">
-          <td>{{emp.empname}}</td>
-          <td>{{emp.empemail}}</td>
-          <td>{{emp.empadd}}</td>
-          <td>{{emp.empmobno}}</td>
-          <td>{{emp.empdep}}</td>
-          <td > <a class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#myModal" (emptied)="empdata" (click)="edit()" ><i class="fa fa-pencil-square-o"></i></a>
-            <span class="btn btn-danger  ms-3" (click)="deletedata(emp.id)"><i class="fa fa-trash"></i></span>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let emp of empdata">
+            <td>{{emp.empname}}</td>
+            <td>{{emp.empemail}}</td>
+            <td>{{emp.empadd}}</td>
+            <td>{{emp.empmobno}}</td>
+            <td>{{emp.empdep}}</td>
+            <td> <a class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#myModal" (emptied)="empdata"
+                (click)="edit()"><i class="fa fa-pencil-square-o"></i></a>
+              <span class="btn btn-danger  ms-3" (click)="deletedata(emp.id)"><i class="fa fa-trash"></i></span>
 
-          </td>
+            </td>
 
-        </tr>
-      </tbody>
-    </table>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
- </div>
   <!-- The Modal -->
-  <div class="modal" id="myModal" >
+  <div class="modal" id="myModal">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
 
         <!-- Modal Header -->
         <div class="modal-header text-warning bg-dark">
           <div class="emptitle">
-          <h4 class="modal-title text-center">EMPLOYEE INFO</h4>
+            <h4 class="modal-title text-center">EMPLOYEE INFO</h4>
           </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
 
         <!-- Modal body -->
-        <form [formGroup]="formdata" >
-        <div class="modal-body bg-warning">
-          <div class="center">
-            <input type="text" name="empname" id="emp" class="form-control  w-50 p-2  " placeholder="Enter EmpName" formControlName="empname"><br>
-            <input type="text" name="empemail" id="emp" class="form-control  w-50 p-2 " placeholder="Enter EmpEmail" formControlName="empemail" ><br>
-            <input type="text" name="empmobno" id="emp" class="form-control  w-50 p-2 " placeholder="Enter EmpMobNo" formControlName="empmobno" ><br>
-            <input type="text" name="empadd" id="emp" class="form-control  w-50 p-2 " placeholder="Enter EmpAdd" formControlName="empadd" ><br>
-            <input type="text" name="empdep" id="emp" class="form-control  w-50 p-2 " placeholder="Enter EmpDep" formControlName="empdep" ><br>
+        <form [formGroup]="formdata">
+          <div class="modal-body bg-warning">
+            <div class="center">
+              <input type="text" name="empname" id="emp" class="form-control  w-50 p-2  " placeholder="Enter EmpName"
+                formControlName="empname"><br>
+              <input type="text" name="empemail" id="emp" class="form-control  w-50 p-2 " placeholder="Enter EmpEmail"
+                formControlName="empemail"><br>
+              <input type="text" name="empmobno" id="emp" class="form-control  w-50 p-2 " placeholder="Enter EmpMobNo"
+                formControlName="empmobno"><br>
+              <input type="text" name="empadd" id="emp" class="form-control  w-50 p-2 " placeholder="Enter EmpAdd"
+                formControlName="empadd"><br>
+              <input type="text" name="empdep" id="emp" class="form-control  w-50 p-2 " placeholder="Enter EmpDep"
+                formControlName="empdep"><br>
+
+            </div>
 
           </div>
-
-        </div>
-      </form>
+        </form>
         <!-- Modal footer -->
         <div class="modal-footer bg-dark">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CLOSE</button>
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" (click)="submit(formdata.value)" >SUBMIT</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
+            (click)="submit(formdata.value)">SUBMIT</button>
 
         </div>
 
       </div>
     </div>
   </div>
-
-
 </body>
